@@ -8,7 +8,7 @@ export default function About() {
           <div className="about-img-placeholder">
             <img src={photoRozenn} alt="Portrait de Rozenn Guéguen" className="about-img" />
           </div>
-          <h3 className="about-name">Rozenn Guéguen</h3>
+          <h3 className="about-name">Rozenn Guéguen Trégouët</h3>
         </div>
         <div>
           <h3 className="about-quote">" Parce que chaque histoire est unique. "</h3>

@@ -25,14 +25,14 @@ export default function Footer() {
           </svg>
           <div className="footer-text">
             <h4>Coordonnées</h4>
-            <p style={{ marginBottom: '5px' }}><a href="tel:+33000000000">+33 0 00 00 00 00</a></p>
-            <p><a href="mailto:rozennngueguen@gmail.com">rozennngueguen@gmail.com</a></p>
+            <p style={{ marginBottom: '5px' }}><a href="tel:+33659321552">+33 6 59 32 15 52</a></p>
+            <p><a href="mailto:lavoyageusedevie@gmail.com">lavoyageusedevie@gmail.com</a></p>
           </div>
         </div>
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; 2026 La Voyageuse de Nuit - Tous droits réservés.</p>
+        <p>&copy; 2026 La Voyageuse de Vie - Tous droits réservés.</p>
         <p>Maquette fonctionnelle pour intégration.</p>
       </div>
     </footer>

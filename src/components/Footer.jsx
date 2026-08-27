@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="footer-container">
         <div className="footer-brand">
           <span className="logo-main" style={{ fontSize: '1.4rem', letterSpacing: '2px', color: 'white' }}>LA VOYAGEUSE</span>
-          <span className="about-name" style={{ fontSize: '2.5rem', display: 'block' }}>Rozenn Guéguen</span>
+          <span className="about-name" style={{ fontSize: '2.5rem', display: 'block' }}>Rozenn GUÉGUEN-TRÉGOUËT</span>
         </div>
         
         <div className="footer-info-block">

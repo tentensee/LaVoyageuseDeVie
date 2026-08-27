@@ -8,7 +8,7 @@ export default function Hero() {
           <h1 className="hero-title">
             LA VOYAGEUSE<br/>
             <span className="script-font" style={{ fontSize: '3.5rem', color: 'var(--sage-green)' }}>
-              de nuit
+              de Vie
             </span>
           </h1>
           <p className="hero-subtitle">Accompagnement des séniors et des aidants</p>

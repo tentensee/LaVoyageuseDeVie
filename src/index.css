@@ -1,0 +1,618 @@
+/* Variables de couleur inspirées du flyer */
+:root {
+    --bg-sand-light: #f9f6f0;
+    --bg-sand-dark: #ebdcd0;
+    --sage-green: #5c6b59;
+    --sage-green-light: #f0f3ef;
+    --charcoal: #232b2b;
+    --text-dark: #2c312e;
+    --accent-terracotta: #bd9a83;
+    --transition-smooth: all 0.3s ease;
+}
+
+/* Styles globaux */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg-sand-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.script-font {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    text-transform: lowercase;
+    font-weight: 400;
+}
+
+.handwritten-font {
+    font-family: 'Caveat', cursive;
+    text-transform: none !important;
+}
+
+/* Header / Navigation */
+header {
+    background-color: rgba(249, 246, 240, 0.95);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: var(--transition-smooth);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-decoration: none;
+    color: var(--charcoal);
+}
+
+.logo-main {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    display: block;
+}
+
+.logo-sub {
+    font-size: 1.2rem;
+    color: var(--sage-green);
+    margin-top: -5px;
+    display: block;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 400;
+    font-size: 0.95rem;
+    position: relative;
+    padding: 5px 0;
+    transition: var(--transition-smooth);
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--sage-green);
+    transition: var(--transition-smooth);
+}
+
+nav a:hover::after, nav a.active::after {
+    width: 100%;
+}
+
+nav a:hover {
+    color: var(--sage-green);
+}
+
+.btn-cta {
+    background-color: var(--sage-green);
+    color: white;
+    padding: 10px 22px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: var(--transition-smooth);
+    border: 2px solid transparent;
+}
+
+.btn-cta:hover {
+    background-color: transparent;
+    color: var(--sage-green);
+    border-color: var(--sage-green);
+    transform: translateY(-2px);
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--charcoal);
+    border-radius: 3px;
+    transition: var(--transition-smooth);
+}
+
+/* Hero Section */
+.hero {
+    padding-top: 80px;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: linear-gradient(to right, rgba(249, 246, 240, 0.92) 45%, rgba(249, 246, 240, 0.4) 100%), 
+                url('https://www.saint-brevin.com/medias/images/info_menu/plage-saint-brevin-33.jpg') no-repeat center center/cover;
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    width: 100%;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero-title {
+    font-size: 3.2rem;
+    line-height: 1.1;
+    color: var(--charcoal);
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--text-dark);
+    margin-bottom: 30px;
+    line-height: 1.4;
+    border-left: 4px solid var(--accent-terracotta);
+    padding-left: 15px;
+}
+
+/* Manifeste / Slogan Banner */
+.manifesto-banner {
+    background-color: var(--sage-green);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    position: relative;
+}
+
+.manifesto-text {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+/* Section Services */
+.services-section {
+    padding: 100px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-header h2 {
+    font-size: 2.2rem;
+    color: var(--charcoal);
+    position: relative;
+    display: inline-block;
+    padding-bottom: 15px;
+}
+
+.section-header h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    width: 50%;
+    height: 2px;
+    background-color: var(--accent-terracotta);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.service-card {
+    background-color: white;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    transition: var(--transition-smooth);
+    border: 1px solid rgba(92, 107, 89, 0.08);
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(92, 107, 89, 0.08);
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: var(--sage-green);
+    opacity: 0.7;
+}
+
+.card-icon-wrapper {
+    width: 70px;
+    height: 70px;
+    background-color: var(--sage-green-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.card-icon {
+    width: 35px;
+    height: 35px;
+    fill: var(--sage-green);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: var(--charcoal);
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card-subtitle {
+    font-size: 1.6rem;
+    color: var(--sage-green);
+    margin-bottom: 25px;
+}
+
+.service-list {
+    list-style: none;
+}
+
+.service-list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 18px;
+    font-size: 1.05rem;
+    color: var(--text-dark);
+}
+
+/* Puces Coeur personnalisées comme sur le flyer */
+.service-list li::before {
+    content: '♥';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--accent-terracotta);
+    font-size: 1.2rem;
+    transition: var(--transition-smooth);
+}
+
+.service-card:hover .service-list li::before {
+    transform: scale(1.2);
+    color: var(--sage-green);
+}
+
+/* Section Approche / À Propos */
+.about-section {
+    background-color: var(--bg-sand-dark);
+    padding: 100px 20px;
+}
+
+.about-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.2fr 2fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-image-wrapper {
+    position: relative;
+    text-align: center;
+}
+
+.about-img-placeholder {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background-color: var(--sage-green-light);
+    border: 8px solid white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--sage-green);
+    font-weight: 600;
+    background-image: linear-gradient(45deg, #cbd5e1, #f8fafc);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Effet de survol sur la photo */
+.about-img-placeholder::after {
+    content: 'Photo de Rozenn';
+    position: absolute;
+    font-size: 0.9rem;
+    bottom: 20px;
+    background-color: rgba(255,255,255,0.8);
+    padding: 4px 12px;
+    border-radius: 20px;
+    color: var(--charcoal);
+}
+
+.about-name {
+    font-family: 'Caveat', cursive;
+    font-size: 3rem;
+    color: var(--charcoal);
+    margin-top: 15px;
+    text-align: center;
+}
+
+.about-quote {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--sage-green);
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: var(--text-dark);
+}
+
+/* Section Contact interactive */
+.contact-section {
+    padding: 100px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.02);
+    border: 1px solid rgba(0,0,0,0.02);
+}
+
+.form-group {
+    margin-bottom: 22px;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--charcoal);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 14px 18px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    background-color: #fafafa;
+    transition: var(--transition-smooth);
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--sage-green);
+    background-color: white;
+    box-shadow: 0 0 0 4px rgba(92, 107, 89, 0.15);
+}
+
+textarea.form-control {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.btn-submit {
+    background-color: var(--sage-green);
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: var(--transition-smooth);
+    box-shadow: 0 5px 15px rgba(92, 107, 89, 0.2);
+}
+
+.btn-submit:hover {
+    background-color: var(--charcoal);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Notification de succès interactive */
+.success-toast {
+    background-color: #4caf50;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+    animation: fadeIn 0.5s ease;
+}
+
+/* Pied de page (Footer) */
+footer {
+    background-color: var(--charcoal);
+    color: white;
+    padding: 60px 20px 30px 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1.3fr;
+    gap: 40px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 40px;
+}
+
+.footer-info-block {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.footer-icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--accent-terracotta);
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+.footer-text h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #f9f6f0;
+}
+
+.footer-text p, .footer-text a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: var(--transition-smooth);
+}
+
+.footer-text a:hover {
+    color: var(--accent-terracotta);
+}
+
+.footer-brand .about-name {
+    color: white;
+    text-align: left;
+    margin-top: 0;
+    line-height: 1;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Design Responsive (Tablettes et Mobiles) */
+@media (max-width: 992px) {
+    .hero-title { font-size: 2.6rem; }
+    .services-grid { grid-template-columns: 1fr; gap: 30px; }
+    .about-container { grid-template-columns: 1fr; gap: 40px; text-align: center; }
+    .about-image-wrapper { order: -1; }
+    .about-brand { text-align: center; }
+    .footer-container { grid-template-columns: 1fr; gap: 30px; }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--bg-sand-light);
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        gap: 15px;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .hero {
+        text-align: center;
+        background: linear-gradient(to bottom, rgba(249, 246, 240, 0.95) 60%, rgba(249, 246, 240, 0.7) 100%), 
+                    url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=768&q=80') no-repeat center center/cover;
+    }
+
+    .hero-subtitle {
+        border-left: none;
+        border-bottom: 2px solid var(--accent-terracotta);
+        padding-left: 0;
+        padding-bottom: 15px;
+    }
+
+    .manifesto-text { font-size: 1.8rem; }
+    .footer-bottom { flex-direction: column; gap: 10px; text-align: center; }
+}

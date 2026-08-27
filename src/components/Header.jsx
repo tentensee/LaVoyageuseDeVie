@@ -28,7 +28,7 @@ export default function Header() {
       <div className="nav-container">
         <a href="#accueil" className="logo">
           <span className="logo-main">LA VOYAGEUSE</span>
-          <span className="logo-sub script-font">de nuit</span>
+          <span className="logo-sub script-font">de Vie</span>
         </a>
         
         <div 

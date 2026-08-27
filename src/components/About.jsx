@@ -10,7 +10,7 @@ export default function About() {
               <path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"/>
             </svg>
           </div>
-          <h3 className="about-name">Rozenn Guéguen</h3>
+          <h3 className="about-name">Rozenn Guéguen Trégouët</h3>
         </div>
         <div>
           <h3 className="about-quote">" Parce que chaque histoire est unique. "</h3>

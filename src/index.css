@@ -161,7 +161,7 @@ nav a:hover {
     align-items: center;
     position: relative;
     background: linear-gradient(to right, rgba(249, 246, 240, 0.92) 45%, rgba(249, 246, 240, 0.4) 100%), 
-                url('https://www.saint-brevin.com/medias/images/info_menu/plage-saint-brevin-33.jpg') no-repeat center center/cover;
+                url(assets/plagesb.jpg) no-repeat center center/cover;
 }
 
 .hero-container {
@@ -372,7 +372,6 @@ nav a:hover {
 
 /* Effet de survol sur la photo */
 .about-img-placeholder::after {
-    content: 'Photo de Rozenn';
     position: absolute;
     font-size: 0.9rem;
     bottom: 20px;

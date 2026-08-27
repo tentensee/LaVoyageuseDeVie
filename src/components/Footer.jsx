@@ -26,7 +26,7 @@ export default function Footer() {
           <div className="footer-text">
             <h4>Coordonnées</h4>
             <p style={{ marginBottom: '5px' }}><a href="tel:+33000000000">+33 0 00 00 00 00</a></p>
-            <p><a href="mailto:rozennngueguen@gmail.com">rozennngueguen@gmail.com</a></p>
+            <p><a href="mailto:lavoyageusedevie@gmail.com">lavoyageusedevie@gmail.com</a></p>
           </div>
         </div>
       </div>

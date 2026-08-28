@@ -8,6 +8,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import './index.css';
 import Tarifs from './components/Tarifs';
+import Secteur from './components/Secteur';
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
         <Manifesto />
         <Services />
         <Tarifs />
+        <Secteur />
         <About />
         <Contact />
       </main>

@@ -13,6 +13,7 @@ export default function About() {
         <div>
           <h3 className="about-quote">" Être là, simplement "</h3>
           <p className="about-text">Présence & lien social</p>
+          <p className="about-text">Présence & lien social</p>
           <p className="about-text">Chaque parcours de vie mérite une attention singulière. C'est pourquoi je m'adapte précisément à vos habitudes, à votre rythme et à vos besoins spécifiques au quotidien.</p>
         </div>
       </div>

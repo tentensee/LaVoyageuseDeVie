@@ -11,7 +11,7 @@ export default function Hero() {
               de Vie
             </span>
           </h1>
-          <p className="hero-subtitle">Accompagnement des séniors et des aidants</p>
+          <p className="hero-subtitle">Présence et accompagnement à domicile des personnes âgées et des aidants</p>
           <a href="#services" className="btn-cta" style={{ padding: '14px 30px', fontSize: '1rem' }}>
             Découvrir mes services
           </a>

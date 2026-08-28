@@ -37,7 +37,7 @@ export default function Services() {
           <h3 className="card-title">Accompagnement des aidants</h3>
           <p className="card-subtitle script-font">Vous avez besoin de souffler quelques heures ? </p>
           <p className="about-text">Je prends le relais auprès de votre proche pendant 2 ou 3 heures pour que vous puissiez faire vos courses, aller à un rendez-vous, voir des amis, pratiquer une activité ou tout simplement avoir du temps pour vous.</p>
-          </ul>
+         </ul>
         </div>
       </div>
     </section>

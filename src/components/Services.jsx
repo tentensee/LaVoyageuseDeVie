@@ -23,7 +23,8 @@ export default function Services() {
             <li>jeux, lecture, promenades</li>
             <li>aide aux démarches simples : factures, courrier, initiation au numérique </li>
           <p className="card-subtitle script-font">Sorties & accompagnement</p>
-          <p className="about-text">Vous souhaitez vous rendre à des rendez-vous ou sorties culturelles mais ne souhaitez ou ne pouvez le faire seul ? Je vous accompagne lors de vos déplacements hors du domicile : promenade, marché, médiathèque, exposition, activité associative …</p>
+          <p className="about-text">Vous souhaitez vous rendre à des rendez-vous ou sorties culturelles mais ne souhaitez ou ne pouvez le faire seul ?</p>
+            <p className="about-text">Je vous accompagne lors de vos déplacements hors du domicile : promenade, marché, médiathèque, exposition, activité associative …</p>
           </ul>
         </div>
 

@@ -17,7 +17,7 @@ export default function Services() {
           <h3 className="card-title">Accompagnement des personnes âgées</h3>
           <p className="card-subtitle script-font">Présence & lien social</p>
           <ul className="service-list">
-            <li>visites de convivialité  <span style={{ fontSize: '0.9rem', color: '#666' }}>(ménage, courses, repas, rendez-vous....)</span></li>
+            <li>visites de convivialité</li>
             <li>temps d'écoute et de conversation</li>
             <li>lecture, jeux, promenades</li>
             <li>aide aux démarches simples : factures, courrier, initiation au numérique </li>

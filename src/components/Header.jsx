@@ -6,7 +6,7 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['accueil', 'services', 'approche', 'contact'];
+      const sections = ['accueil', 'services', 'tarifs', 'approche', 'contact'];
       const scrollPosition = window.scrollY + 150;
 
       for (const section of sections) {

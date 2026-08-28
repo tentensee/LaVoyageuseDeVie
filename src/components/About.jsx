@@ -13,13 +13,11 @@ export default function About() {
         <div>
           <h3 className="about-quote">" Être là, simplement "</h3>
           <p className="about-text">Après de nombreuses années consacrées à l'accompagnement humain dans l'Éducation nationale en tant que Professeure puis Conseillère principale d'éducation, je mets aujourd’hui mes compétences d'écoute, de relation humaine et d’accompagnement au service des personnes âgées et des aidants en apportant une présence chaleureuse, bienveillante et rassurante aux personnes âgées tout en offrant une bulle de répit essentielle à leurs proches aidants.</p>
-          <p className="about-text">Mon accompagnement :
-</p>
-          <p className="about-text">•	Un accompagnement individualisé 
-•	Une présence authentique et rassurante 
-•	Une écoute sans jugement
-•	Respect de la personne et de son histoire
-•	Discrétion et confidentialité</p>
+          <p className="about-text">•	Un accompagnement individualisé </p>
+          <p className="about-text">•	Une présence authentique et rassurante </p>
+          <p className="about-text">•	Une écoute sans jugement </p>
+          <p className="about-text">•	Respect de la personne et de son histoire </p>
+          <p className="about-text">•	Discrétion et confidentialité</p>
         </div>
       </div>
     </section>

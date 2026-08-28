@@ -19,30 +19,43 @@ export default function Tarifs() {
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Présence et lien social</td>
-                <td>Un temps pour échanger, lire, se promener, partager une activité ou simplement ne pas être seul</td>
+              {/* Prestation 1 */}
+              <tr className="main-row">
+                <td><strong>Présence et lien social</strong></td>
                 <td>2h minimum</td>
                 <td>30 €/h</td>
                 <td>15 €/h</td>
               </tr>
-              <tr>
-                <td>Sorties et accompagnement</td>
-                <td>Un accompagnement de qualité dans vos déplacements hors de votre domicile (Promenade, marché, rendez-vous, activité culturelle ou sortie de proximité)</td>
+              <tr className="desc-row">
+                <td colSpan="4">Un temps pour échanger, lire, se promener, partager une activité ou simplement ne pas être seul.</td>
+              </tr>
+
+              {/* Prestation 2 */}
+              <tr className="main-row">
+                <td><strong>Sorties et accompagnement</strong></td>
                 <td>2 heures minimum</td>
                 <td>30 €/h</td>
                 <td>15 €/h</td>
               </tr>
-              <tr>
-                <td>Répit des aidants</td>
-                <td>Je prends le relais auprès de votre proche pendant que vous prenez du temps pour vous</td>
+              <tr className="desc-row">
+                <td colSpan="4">Un accompagnement de qualité dans vos déplacements hors de votre domicile (Promenade, marché, rendez-vous, activité culturelle ou sortie de proximité).</td>
+              </tr>
+
+              {/* Prestation 3 */}
+              <tr className="main-row">
+                <td><strong>Répit des aidants</strong></td>
                 <td>2 à 3 heures</td>
                 <td>30 €/h</td>
                 <td>15 €/h</td>
               </tr>
+              <tr className="desc-row">
+                <td colSpan="4">Prendre le relais pour vous permettre de souffler et de vous ressourcer en toute sérénité.</td>
+              </tr>
+
+              {/* Prestation 4 (Sans description) */}
               <tr>
-                <td>Accompagnement ponctuel ou demande spécifique</td>
-                <td></td>
+                <td><strong>Accompagnement ponctuel ou demande spécifique</strong></td>
+                <td>À définir</td>
                 <td>35 €/h</td>
                 <td>17.50 €/h</td>
               </tr>

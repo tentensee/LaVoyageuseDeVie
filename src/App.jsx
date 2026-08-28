@@ -7,6 +7,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import './index.css';
+import Tarifs from './components/Tarifs';
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         <Hero />
         <Manifesto />
         <Services />
+        <Tarifs />
         <About />
         <Contact />
       </main>

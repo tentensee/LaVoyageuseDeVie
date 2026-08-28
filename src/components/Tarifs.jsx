@@ -27,7 +27,7 @@ export default function Tarifs() {
                 <td>15 €/h</td>
               </tr>
               <tr className="desc-row">
-                <td colSpan="4">Un temps pour échanger, lire, se promener, partager une activité ou simplement ne pas être seul.</td>
+                <td colSpan="4">Un temps pour échanger, lire, se promener, partager une activité ou simplement ne pas être seul</td>
               </tr>
 
               {/* Prestation 2 */}
@@ -38,7 +38,7 @@ export default function Tarifs() {
                 <td>15 €/h</td>
               </tr>
               <tr className="desc-row">
-                <td colSpan="4">Un accompagnement de qualité dans vos déplacements hors de votre domicile (Promenade, marché, rendez-vous, activité culturelle ou sortie de proximité).</td>
+                <td colSpan="4">Un accompagnement de qualité dans vos déplacements de proximité hors de votre domicile : marché, rendez-vous, activité culturelle ...</td>
               </tr>
 
               {/* Prestation 3 */}

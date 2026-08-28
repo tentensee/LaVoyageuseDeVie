@@ -17,10 +17,10 @@ export default function Services() {
           <h3 className="card-title">Accompagnement des personnes âgées</h3>
           <p className="card-subtitle script-font">Présence & lien social</p>
           <ul className="service-list">
-            <li>Soutien dans le quotidien <span style={{ fontSize: '0.9rem', color: '#666' }}>(ménage, courses, repas, rendez-vous....)</span></li>
-            <li>Présence et écoute</li>
-            <li>Maintien de l'autonomie et du lien social</li>
-            <li>Sorties, activités, moments de partages</li>
+            <li>visites de convivialité  <span style={{ fontSize: '0.9rem', color: '#666' }}>(ménage, courses, repas, rendez-vous....)</span></li>
+            <li>temps d'écoute et de conversation</li>
+            <li>lecture, jeux, promenades</li>
+            <li>aide aux démarches simples : factures, courrier, initiation au numérique </li>
           </ul>
         </div>
 
@@ -30,7 +30,7 @@ export default function Services() {
               <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A2,2 0 0,1 14,6A2,2 0 0,1 12,8A2,2 0 0,1 10,6A2,2 0 0,1 12,4M12,18c-2.45,0 -4.61,-1.24 -5.89,-3.12C6.39,13.62 9,12.5 12,12.5c3,0 5.61,1.12 5.89,2.38C16.61,16.76 14.45,18 12,18Z"/>
             </svg>
           </div>
-          <h3 className="card-title">Soutien aux</h3>
+          <h3 className="card-title">Accompagnement des aidants</h3>
           <p className="card-subtitle script-font">aidants</p>
           <ul className="service-list">
             <li>Écoute, soutien moral et échanges</li>

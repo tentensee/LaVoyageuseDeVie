@@ -698,3 +698,24 @@ footer {
 .pricing-table td:not(:first-child) {
     text-align: center;
 }
+
+/* Retire la bordure entre le titre de la prestation et sa description */
+.pricing-table tr.main-row td {
+    border-bottom: none;
+    padding-bottom: 5px;
+}
+
+/* Style de la phrase de description fusionnée */
+.pricing-table tr.desc-row td {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #555;
+    padding-top: 0;
+    text-align: left !important; /* Force l'alignement à gauche pour la lecture */
+}
+
+/* On remet le texte en gras pour la première colonne pour bien la différencier */
+.pricing-table td strong {
+    color: var(--sage-green);
+    font-weight: 600;
+}

@@ -62,10 +62,6 @@ export default function Tarifs() {
             </tbody>
           </table>
         </div>
-        <p className="pricing-note">
-          * Les paiements par CESU (Chèque Emploi Service Universel) sont acceptés, vous donnant droit à une réduction ou un crédit d'impôt de 50%.
-        </p>
-      </div>
     </section>
   );
 }

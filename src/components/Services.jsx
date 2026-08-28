@@ -4,7 +4,7 @@ export default function Services() {
   return (
     <section className="services-section" id="services">
       <div className="section-header">
-        <h2>Mes services</h2>
+        <h2>Mes Services</h2>
       </div>
       
       <div className="services-grid">

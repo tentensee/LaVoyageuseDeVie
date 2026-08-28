@@ -40,6 +40,7 @@ h1, h2, h3 {
 .handwritten-font {
     font-family: 'Caveat', cursive;
     text-transform: none !important;
+    font-size: 1.8rem;
 }
 
 /* Header / Navigation */

@@ -33,7 +33,7 @@ export default function Tarifs() {
               {/* Prestation 2 */}
               <tr className="main-row">
                 <td><strong>Sorties et accompagnement</strong></td>
-                <td>2 heures minimum</td>
+                <td>2h minimum</td>
                 <td>30 €/h</td>
                 <td>15 €/h</td>
               </tr>

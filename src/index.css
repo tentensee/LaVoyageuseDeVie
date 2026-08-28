@@ -34,7 +34,6 @@ h1, h2, h3 {
 .script-font {
     font-family: 'Playfair Display', serif;
     font-style: italic;
-    text-transform: lowercase;
     font-weight: 400;
 }
 

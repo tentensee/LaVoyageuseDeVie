@@ -618,17 +618,23 @@ footer {
 
 /* Section Tarifs */
 .pricing-section {
+    background-color: var(--sage-green); /* Ajout du fond vert sauge */
     padding: 100px 20px;
-    max-width: 1000px; /* Un peu moins large pour un tableau bien lisible */
-    margin: 0 auto;
 }
 
+/* On force le titre au-dessus du tableau à être blanc pour qu'il soit lisible sur le fond vert */
+.pricing-section .section-header h2 {
+    color: white;
+}
+
+/* Le conteneur du tableau reste blanc mais on lui donne un peu plus de place */
 .pricing-container {
     background-color: white;
     border-radius: 16px;
     padding: 40px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
-    border: 1px solid rgba(92, 107, 89, 0.08);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15); /* Ombre un peu plus forte */
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 /* Permet au tableau de glisser de gauche à droite sur les petits téléphones */

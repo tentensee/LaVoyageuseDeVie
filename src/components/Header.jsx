@@ -44,6 +44,7 @@ export default function Header() {
           <ul className={isMobileMenuOpen ? 'active' : ''}>
             <li><a href="#accueil" onClick={closeMenu} className={activeSection === 'accueil' ? 'active' : ''}>Accueil</a></li>
             <li><a href="#services" onClick={closeMenu} className={activeSection === 'services' ? 'active' : ''}>Mes Services</a></li>
+            <li><a href="#tarifs" onClick={closeMenu} className={activeSection === 'tarifs' ? 'active' : ''}>Mes Tarifs</a></li>
             <li><a href="#approche" onClick={closeMenu} className={activeSection === 'approche' ? 'active' : ''}>Mon Approche</a></li>
             <li><a href="#contact" onClick={closeMenu} className="btn-cta">Me Contacter</a></li>
           </ul>

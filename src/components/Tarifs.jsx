@@ -14,42 +14,54 @@ export default function Tarifs() {
               <tr>
                 <th>Prestation</th>
                 <th>Durée</th>
-                <th>Tarif unitaire</th>
-                <th>Coût après crédit d'impôt (50%)</th>
+                <th>Tarif</th>
+                <th>Après crédit d'impôt</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Visite de convivialité</td>
-                <td>1 heure</td>
-                <td>25,00 €</td>
-                <td>12,50 €</td>
+              {/* Prestation 1 */}
+              <tr className="main-row">
+                <td><strong>Présence et lien social</strong></td>
+                <td>2h minimum</td>
+                <td>30 €/h</td>
+                <td>15 €/h</td>
               </tr>
-              <tr>
-                <td>Sorties et accompagnement</td>
-                <td>2 heures</td>
-                <td>48,00 €</td>
-                <td>24,00 €</td>
+              <tr className="desc-row">
+                <td colSpan="4">Un temps pour échanger, lire, se promener, partager une activité ou simplement ne pas être seul.</td>
               </tr>
-              <tr>
-                <td>Répit pour les aidants</td>
-                <td>3 heures</td>
-                <td>70,00 €</td>
-                <td>35,00 €</td>
+
+              {/* Prestation 2 */}
+              <tr className="main-row">
+                <td><strong>Sorties et accompagnement</strong></td>
+                <td>2h minimum</td>
+                <td>30 €/h</td>
+                <td>15 €/h</td>
               </tr>
+              <tr className="desc-row">
+                <td colSpan="4">Un accompagnement de qualité dans vos déplacements hors de votre domicile (Promenade, marché, rendez-vous, activité culturelle ou sortie de proximité).</td>
+              </tr>
+
+              {/* Prestation 3 */}
+              <tr className="main-row">
+                <td><strong>Répit des aidants</strong></td>
+                <td>2 à 3 heures</td>
+                <td>30 €/h</td>
+                <td>15 €/h</td>
+              </tr>
+              <tr className="desc-row">
+                <td colSpan="4">Prendre le relais pour vous permettre de souffler et de vous ressourcer en toute sérénité.</td>
+              </tr>
+
+              {/* Prestation 4 (Sans description) */}
               <tr>
-                <td>Forfait accompagnement régulier</td>
-                <td>10 heures / mois</td>
-                <td>230,00 €</td>
-                <td>115,00 €</td>
+                <td><strong>Accompagnement ponctuel ou demande spécifique</strong></td>
+                <td>À définir</td>
+                <td>35 €/h</td>
+                <td>17.50 €/h</td>
               </tr>
             </tbody>
           </table>
         </div>
-        <p className="pricing-note">
-          * Les paiements par CESU (Chèque Emploi Service Universel) sont acceptés, vous donnant droit à une réduction ou un crédit d'impôt de 50%.
-        </p>
-      </div>
     </section>
   );
 }

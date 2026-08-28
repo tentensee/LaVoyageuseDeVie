@@ -35,7 +35,7 @@ export default function Tarifs() {
               </tr>
               <tr>
                 <td>Répit des aidants</td>
-                <td>Répit des aidants</td>
+                <td>Je prends le relais auprès de votre proche pendant que vous prenez du temps pour vous</td>
                 <td>2 à 3 heures</td>
                 <td>30 €/h</td>
                 <td>15 €/h</td>

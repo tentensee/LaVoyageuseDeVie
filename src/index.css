@@ -615,3 +615,74 @@ footer {
     .manifesto-text { font-size: 1.8rem; }
     .footer-bottom { flex-direction: column; gap: 10px; text-align: center; }
 }
+
+/* Section Tarifs */
+.pricing-section {
+    padding: 100px 20px;
+    max-width: 1000px; /* Un peu moins large pour un tableau bien lisible */
+    margin: 0 auto;
+}
+
+.pricing-container {
+    background-color: white;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    border: 1px solid rgba(92, 107, 89, 0.08);
+}
+
+/* Permet au tableau de glisser de gauche à droite sur les petits téléphones */
+.table-responsive {
+    overflow-x: auto;
+}
+
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.pricing-table th {
+    background-color: var(--sage-green-light);
+    color: var(--sage-green);
+    padding: 16px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    border-bottom: 2px solid var(--sage-green);
+}
+
+.pricing-table td {
+    padding: 16px;
+    border-bottom: 1px solid #f0f0f0;
+    color: var(--text-dark);
+}
+
+/* Effet au survol des lignes du tableau */
+.pricing-table tbody tr {
+    transition: var(--transition-smooth);
+}
+
+.pricing-table tbody tr:hover {
+    background-color: var(--bg-sand-light);
+}
+
+.pricing-note {
+    font-size: 0.9rem;
+    color: var(--sage-green);
+    font-style: italic;
+    margin-top: 15px;
+    text-align: right;
+}
+
+/* Design Responsive pour le tableau sur Mobile */
+@media (max-width: 768px) {
+    .pricing-container {
+        padding: 20px;
+    }
+    
+    .pricing-table th, .pricing-table td {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+}

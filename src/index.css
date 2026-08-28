@@ -692,3 +692,9 @@ footer {
         font-size: 0.9rem;
     }
 }
+
+/* Centrer toutes les colonnes sauf la première (Prestation) */
+.pricing-table th:not(:first-child),
+.pricing-table td:not(:first-child) {
+    text-align: center;
+}

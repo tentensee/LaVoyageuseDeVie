@@ -37,12 +37,10 @@ h1, h2, h3 {
     font-weight: 400;
 }
 
-.about-name {
+
+.handwritten-font {
     font-family: 'Caveat', cursive;
-    font-size: 2rem !important; /* Force cette taille de police */
-    color: var(--charcoal);
-    margin-top: 15px;
-    text-align: center;
+    text-transform: none !important;
 }
 
 /* Header / Navigation */

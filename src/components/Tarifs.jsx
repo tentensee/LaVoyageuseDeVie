@@ -14,34 +14,37 @@ export default function Tarifs() {
               <tr>
                 <th>Prestation</th>
                 <th>Durée</th>
-                <th>Tarif unitaire</th>
+                <th>Tarif</th>
                 <th>Coût après crédit d'impôt (50%)</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Visite de convivialité</td>
-                <td>1 heure</td>
-                <td>25,00 €</td>
-                <td>12,50 €</td>
+                <td>Présence et lien social</td>
+                <td>Un temps pour échanger, lire, se promener, partager une activité ou simplement ne pas être seul</td>
+                <td>2h minimum</td>
+                <td>30 €/h</td>
+                <td>15 €/h</td>
               </tr>
               <tr>
                 <td>Sorties et accompagnement</td>
-                <td>2 heures</td>
-                <td>48,00 €</td>
-                <td>24,00 €</td>
+                <td>Un accompagnement de qualité dans vos déplacements hors de votre domicile (Promenade, marché, rendez-vous, activité culturelle ou sortie de proximité)</td>
+                <td>2 heures minimum</td>
+                <td>30 €/h</td>
+                <td>15 €/h</td>
               </tr>
               <tr>
-                <td>Répit pour les aidants</td>
-                <td>3 heures</td>
-                <td>70,00 €</td>
-                <td>35,00 €</td>
+                <td>Répit des aidants</td>
+                <td>Répit des aidants</td>
+                <td>2 à 3 heures</td>
+                <td>30 €/h</td>
+                <td>15 €/h</td>
               </tr>
               <tr>
-                <td>Forfait accompagnement régulier</td>
-                <td>10 heures / mois</td>
-                <td>230,00 €</td>
-                <td>115,00 €</td>
+                <td>Accompagnement ponctuel ou demande spécifique</td>
+                <td></td>
+                <td>35 €/h</td>
+                <td>17.50 €/h</td>
               </tr>
             </tbody>
           </table>

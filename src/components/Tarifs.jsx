@@ -15,7 +15,7 @@ export default function Tarifs() {
                 <th>Prestation</th>
                 <th>Durée</th>
                 <th>Tarif</th>
-                <th>Coût après crédit d'impôt (50%)</th>
+                <th>Après crédit d'impôt</th>
               </tr>
             </thead>
             <tbody>

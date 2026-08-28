@@ -16,6 +16,7 @@ export default function Services() {
           </div>
           <h3 className="card-title">Accompagnement des personnes âgées</h3>
           <p className="card-subtitle script-font">Présence & lien social</p>
+          <p className="about-text">Pour les personnes qui souhaitent rompre l'isolement, maintenir un lien social ou simplement partager un moment de qualité, je vous propose un accompagnement humain et personnalisé dans votre quotidien avec une présence et une écoute véritable : </p>
           <ul className="service-list">
             <li>visites de convivialité</li>
             <li>temps d'écoute et de conversation</li>

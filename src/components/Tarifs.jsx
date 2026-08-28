@@ -62,6 +62,7 @@ export default function Tarifs() {
             </tbody>
           </table>
         </div>
+      </div> {/* <-- C'est ce div qui manquait ! */}
     </section>
   );
 }

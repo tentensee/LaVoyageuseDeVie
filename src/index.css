@@ -719,3 +719,49 @@ footer {
     color: var(--sage-green);
     font-weight: 600;
 }
+
+/* Section Secteur d'intervention */
+.map-section {
+    padding: 100px 20px;
+    background-color: var(--bg-sand-light);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.map-container {
+    background-color: white;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    border: 1px solid rgba(92, 107, 89, 0.08);
+}
+
+.map-description {
+    text-align: center;
+    font-size: 1.05rem;
+    color: var(--text-dark);
+    margin-bottom: 25px;
+}
+
+/* Conteneur pour s'assurer que la carte respecte les bords arrondis */
+.iframe-wrapper {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border: 2px solid var(--sage-green-light);
+}
+
+.iframe-wrapper iframe {
+    display: block; /* Supprime l'espace vide sous l'iframe */
+}
+
+/* Design Responsive sur Mobile */
+@media (max-width: 768px) {
+    .map-container {
+        padding: 15px;
+    }
+    
+    .iframe-wrapper iframe {
+        height: 350px; /* Carte un peu moins haute sur téléphone */
+    }
+}

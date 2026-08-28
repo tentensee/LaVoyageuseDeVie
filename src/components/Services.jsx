@@ -14,8 +14,8 @@ export default function Services() {
               <path d="M16,13C15.71,13 15.38,13 15.05,13.05C14.82,12.43 14.21,12 13.5,12C12.79,12 12.18,12.43 11.95,13.05C11.62,13 11.29,13 11,13C8.24,13 6,15.24 6,18V21H10V18C10,16.07 11.57,14.5 13.5,14.5C15.43,14.5 17,16.07 17,18V21H21V18C21,15.24 18.76,13 16,13M13.5,4C14.88,4 16,5.12 16,6.5C16,7.88 14.88,9 13.5,9C12.12,9 11,7.88 11,6.5C11,5.12 12.12,4 13.5,4M7.5,7C8.88,7 10,8.12 10,9.5C10,10.88 8.88,12 7.5,12C6.12,12 5,10.88 5,9.5C5,8.12 6.12,7 7.5,7M4.5,14.85C4.84,14.55 5.23,14.3 5.66,14.12C5.23,15.14 5,16.29 5,17.5V21H3V17.5C3,16.39 3.57,15.4 4.5,14.85Z"/>
             </svg>
           </div>
-          <h3 className="card-title">Accompagnement</h3>
-          <p className="card-subtitle script-font">des séniors</p>
+          <h3 className="card-title">Accompagnement des personnes âgées</h3>
+          <p className="card-subtitle script-font">Présence & lien social</p>
           <ul className="service-list">
             <li>Soutien dans le quotidien <span style={{ fontSize: '0.9rem', color: '#666' }}>(ménage, courses, repas, rendez-vous....)</span></li>
             <li>Présence et écoute</li>

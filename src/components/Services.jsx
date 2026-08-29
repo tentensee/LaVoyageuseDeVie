@@ -8,6 +8,7 @@ export default function Services() {
       </div>
       
       <div className="services-grid">
+        {/* Carte 1 */}
         <div className="service-card">
           <div className="card-icon-wrapper">
             <svg className="card-icon" viewBox="0 0 24 24">
@@ -15,19 +16,22 @@ export default function Services() {
             </svg>
           </div>
           <h3 className="card-title">Accompagnement des personnes âgées</h3>
+          
           <p className="card-subtitle script-font">Présence & lien social</p>
           <p className="about-text">Pour les personnes qui souhaitent rompre l'isolement, maintenir un lien social ou simplement partager un moment de qualité, je vous propose un accompagnement humain et personnalisé dans votre quotidien avec une présence et une écoute véritable : </p>
+          
           <ul className="service-list">
             <li>visites de convivialité</li>
             <li>temps d'écoute et de conversation</li>
             <li>jeux, lecture, promenades</li>
-            <li>aide aux démarches simples : factures, courrier, initiation au numérique </li>
+            <li>aide aux démarches simples : factures, courrier, initiation au numérique</li>
+          </ul> {/* LA LISTE EST MAINTENANT BIEN FERMÉE ICI */}
+
           <p className="card-subtitle script-font">Sorties & accompagnement</p>
-          <p className="about-text">Vous souhaitez vous rendre à des rendez-vous ou sorties culturelles mais ne souhaitez ou ne pouvez le faire seul ?</p>
-            <p className="about-text">Je vous accompagne lors de vos déplacements hors du domicile : promenade, marché, médiathèque, exposition, activité associative …</p>
-          </ul>
+          <p className="about-text">Vous souhaitez vous rendre à des rendez-vous ou sorties culturelles mais ne souhaitez ou ne pouvez le faire seul ? Je vous accompagne lors de vos déplacements hors du domicile : promenade, marché, médiathèque, exposition, activité associative…</p>
         </div>
 
+        {/* Carte 2 */}
         <div className="service-card">
           <div className="card-icon-wrapper">
             <svg className="card-icon" viewBox="0 0 24 24">

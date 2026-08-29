@@ -811,7 +811,7 @@ footer {
 
 .iframe-hider {
     position: absolute;
-    top: -60px; /* On remonte la carte de 55px pour cacher le titre gris ! */
+    top: -65px; /* On remonte la carte de 55px pour cacher le titre gris ! */
     left: 0;
     width: 100%;
     height: calc(100% + 55px); /* On compense la taille en bas */

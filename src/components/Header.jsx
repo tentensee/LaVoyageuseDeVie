@@ -6,7 +6,7 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['accueil', 'services', 'tarifs', 'approche', 'contact'];
+      const sections = ['accueil', 'services', 'tarifs', 'secteur', 'approche', 'contact'];
       const scrollPosition = window.scrollY + 150;
 
       for (const section of sections) {
@@ -45,6 +45,7 @@ export default function Header() {
             <li><a href="#accueil" onClick={closeMenu} className={activeSection === 'accueil' ? 'active' : ''}>Accueil</a></li>
             <li><a href="#services" onClick={closeMenu} className={activeSection === 'services' ? 'active' : ''}>Mes Services</a></li>
             <li><a href="#tarifs" onClick={closeMenu} className={activeSection === 'tarifs' ? 'active' : ''}>Mes Tarifs</a></li>
+            <li><a href="#secteur" onClick={closeMenu} className={activeSection === 'secteur' ? 'active' : ''}>Mon secteur</a></li>
             <li><a href="#approche" onClick={closeMenu} className={activeSection === 'approche' ? 'active' : ''}>Mon Approche</a></li>
             <li><a href="#contact" onClick={closeMenu} className="btn-cta">Me Contacter</a></li>
           </ul>

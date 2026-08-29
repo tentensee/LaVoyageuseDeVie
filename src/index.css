@@ -612,7 +612,7 @@ footer {
         padding-bottom: 15px;
     }
 
-    .manifesto-text { font-size: 1rem; }
+    .manifesto-text { font-size: 0.5rem; }
     .footer-bottom { flex-direction: column; gap: 10px; text-align: center; }
 }
 

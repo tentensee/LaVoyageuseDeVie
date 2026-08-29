@@ -28,7 +28,8 @@ export default function Services() {
           </ul> {/* LA LISTE EST MAINTENANT BIEN FERMÉE ICI */}
 
           <p className="card-subtitle script-font">Sorties & accompagnement</p>
-          <p className="about-text">Vous souhaitez vous rendre à des rendez-vous ou sorties culturelles mais ne souhaitez ou ne pouvez le faire seul ? Je vous accompagne lors de vos déplacements hors du domicile : promenade, marché, médiathèque, exposition, activité associative…</p>
+          <p className="about-text">Vous souhaitez vous rendre à des rendez-vous ou sorties culturelles mais ne souhaitez ou ne pouvez le faire seul ?</p> 
+          <p>Je vous accompagne lors de vos déplacements hors du domicile : promenade, marché, médiathèque, exposition, activité associative…</p>
         </div>
 
         {/* Carte 2 */}

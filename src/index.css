@@ -280,7 +280,7 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 .card-icon {
@@ -300,7 +300,7 @@ nav a:hover {
 .card-subtitle {
     font-size: 1.6rem;
     color: var(--sage-green);
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 
 .service-list {
@@ -310,7 +310,7 @@ nav a:hover {
 .service-list li {
     position: relative;
     padding-left: 30px;
-    margin-bottom: 18px;
+    margin-bottom: 8px;
     font-size: 1.05rem;
     color: var(--text-dark);
 }

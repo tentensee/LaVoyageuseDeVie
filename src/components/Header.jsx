@@ -1,4 +1,4 @@
-React, { useState, useEffect } from 'react';
+importer React, { useState, useEffect } from 'react';
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

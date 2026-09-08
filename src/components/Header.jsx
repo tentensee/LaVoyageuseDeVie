@@ -46,7 +46,7 @@ export default function Header() {
             <li><a href="#services" onClick={closeMenu} className={activeSection === 'services' ? 'active' : ''}>Services</a></li>
             <li><a href="#tarifs" onClick={closeMenu} className={activeSection === 'tarifs' ? 'active' : ''}>Tarifs</a></li>
             <li><a href="#secteur" onClick={closeMenu} className={activeSection === 'secteur' ? 'active' : ''}>Secteur d'intervention</a></li>
-            <li><a href="#approche" onClick={closeMenu} className={activeSection === 'approche' ? 'active' : ''}>A propos</a></li>
+            <li><a href="#approche" onClick={closeMenu} className={activeSection === 'approche' ? 'active' : ''}>À propos</a></li>
             <li><a href="#contact" onClick={closeMenu} className="btn-cta">Me Contacter</a></li>
           </ul>
         </nav>

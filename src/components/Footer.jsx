@@ -23,7 +23,6 @@ export default function Footer() {
 
       <div className="footer-bottom">
         <p>&copy; 2026 La Voyageuse de Vie - Tous droits réservés.</p>
-        <p>Maquette fonctionnelle pour intégration.</p>
       </div>
     </footer>
   );

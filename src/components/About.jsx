@@ -8,7 +8,7 @@ export default function About() {
           <div className="about-img-placeholder">
             <img src={photoRozenn} alt="Portrait de Rozenn Guéguen" className="about-img" />
           </div>
-          <h3 className="about-name">Rozenn GUÉGUEN-TRÉGOUËT</h3>
+          <h3 className="about-name script-font">Rozenn <br/>GUÉGUEN-TRÉGOUËT</h3>
         </div>
         <div>
           <p className="about-text">Après de nombreuses années consacrées à l'accompagnement humain dans l'Éducation nationale en tant que Professeure puis Conseillère principale d'éducation, je mets aujourd’hui mes compétences d'écoute, de relation humaine et d’accompagnement au service des personnes âgées en leur apportant une présence chaleureuse, bienveillante et rassurante tout en offrant une bulle de répit essentielle à leurs proches aidants.</p>

@@ -18,9 +18,9 @@ export default function Secteur() {
           
           <div className="secteur-legend">
             <div className="legend-item">
-              <span className="legend-color legend-rose"></span>
+              <span className="legend-color legend-rouge"></span>
               <div className="legend-text">
-                <strong>Zone Rose (Saint-Brévin & environs)</strong>
+                <strong>Zone Rouge (Saint-Brévin & environs)</strong>
                 <span>Aucun frais de déplacement</span>
               </div>
             </div>

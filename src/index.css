@@ -787,9 +787,9 @@ footer {
 }
 
 /* Vous pouvez ajuster les codes couleurs #HEX pour correspondre exactement à votre carte */
-.legend-rose {
-    background-color: #f06292; /* Rose pastel */
-    border: 2px solid #e91e63;
+.legend-rouge {
+    background-color: #df535e;
+    border: 2px solid #921118;
 }
 
 .legend-violet {

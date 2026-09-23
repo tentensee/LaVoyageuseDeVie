@@ -121,6 +121,13 @@ nav a:hover::after, nav a.active::after {
     width: 100%;
 }
 
+nav a.btn-cta::after,
+nav a.btn-cta:hover::after,
+nav a.btn-cta.active::after {
+    width: 0;
+    display: none;
+}
+
 nav a:hover {
     color: var(--sage-green);
 }

@@ -30,8 +30,7 @@ export default function ForWho() {
 
   return (
     <section id="for-who" className="for-who-section">
-      <div className="section-header">
-        <h2>Pour qui ?</h2>
+      <div className="section-header" aria-hidden="true">
       </div>
 
       <div className="for-who-grid">

@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import './index.css';
 import Tarifs from './components/Tarifs';
 import Secteur from './components/Secteur';
+import ForWho from './components/ForWho';
 
 export default function App() {
   return (
@@ -18,8 +19,9 @@ export default function App() {
         <Hero />
         <Manifesto />
         <Services />
-        <Tarifs />
+        <ForWho />
         <Secteur />
+        <Tarifs />
         <About />
         <Contact />
       </main>

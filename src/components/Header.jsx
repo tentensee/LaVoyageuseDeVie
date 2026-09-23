@@ -6,19 +6,39 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['accueil', 'services', 'tarifs', 'secteur', 'approche', 'contact'];
-      const scrollPosition = window.scrollY + 150 ;
+      const sections = ['accueil', 'services', 'for-who', 'secteur', 'tarifs', 'approche', 'contact'];
+      const triggerPosition = window.innerHeight * 0.35;
+
+      let currentSection = 'accueil';
 
       for (const section of sections) {
         const element = document.getElementById(section);
-        if (element && element.offsetTop <= scrollPosition && (element.offsetTop + element.offsetHeight) > scrollPosition) {
-          setActiveSection(section);
+        if (!element) continue;
+
+        const rect = element.getBoundingClientRect();
+
+        if (rect.top <= triggerPosition && rect.bottom >= triggerPosition) {
+          currentSection = section;
+          break;
+        }
+
+        if (rect.top > triggerPosition && rect.top < window.innerHeight) {
+          currentSection = section;
+          break;
         }
       }
+
+      setActiveSection(currentSection);
     };
 
+    handleScroll();
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleScroll);
+    };
   }, []);
 
   const closeMenu = () => setIsMobileMenuOpen(false);
@@ -44,8 +64,9 @@ export default function Header() {
           <ul className={isMobileMenuOpen ? 'active' : ''}>
             <li><a href="#accueil" onClick={closeMenu} className={activeSection === 'accueil' ? 'active' : ''}>Accueil</a></li>
             <li><a href="#services" onClick={closeMenu} className={activeSection === 'services' ? 'active' : ''}>Services</a></li>
-            <li><a href="#tarifs" onClick={closeMenu} className={activeSection === 'tarifs' ? 'active' : ''}>Tarifs</a></li>
+            <li><a href="#for-who" onClick={closeMenu} className={activeSection === 'for-who' ? 'active' : ''}>Pour qui ?</a></li>
             <li><a href="#secteur" onClick={closeMenu} className={activeSection === 'secteur' ? 'active' : ''}>Secteur d'intervention</a></li>
+            <li><a href="#tarifs" onClick={closeMenu} className={activeSection === 'tarifs' ? 'active' : ''}>Tarifs</a></li>
             <li><a href="#approche" onClick={closeMenu} className={activeSection === 'approche' ? 'active' : ''}>À propos</a></li>
             <li><a href="#contact" onClick={closeMenu} className="btn-cta">Me Contacter</a></li>
           </ul>

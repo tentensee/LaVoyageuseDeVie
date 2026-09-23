@@ -65,7 +65,7 @@ export default function Contact() {
         >
           <input type="hidden" name="_captcha" value="false" />
           <input type="hidden" name="_subject" value="Nouveau message depuis le site La Voyageuse de Vie" />
-          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_template" value="basic" />
 
           <div className="form-group">
             <label htmlFor="name">Votre nom / prénom</label>

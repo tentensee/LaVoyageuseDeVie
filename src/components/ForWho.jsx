@@ -3,9 +3,8 @@ import React from 'react';
 export default function ForWho() {
   const profiles = [
     {
-      title: 'Personnes âgées seules ou isolées',
-      text: 'Une présence rassurante, à l\'heure qui convient, pour reprendre confiance dans le quotidien.',
-      icon: (
+    title: 'Personnes âgées seules ou isolées',
+    icon: (
         <svg viewBox="0 0 24 24" className="for-who-icon" aria-hidden="true" fill="currentColor">
           <path d="M12 12c2.76 0 5-2.24 5-5S14.76 2 12 2 7 4.24 7 7s2.24 5 5 5Zm0 2c-3.33 0-10 1.67-10 5v3h20v-3c0-3.33-6.67-5-10-5Z" />
         </svg>
@@ -13,7 +12,6 @@ export default function ForWho() {
     },
     {
       title: 'Familles ayant besoin d’un relais',
-      text: 'Un soutien bienveillant pour retrouver du temps, de la sérénité et une aide fiable au quotidien.',
       icon: (
         <svg viewBox="0 0 24 24" className="for-who-icon" aria-hidden="true" fill="currentColor">
           <path d="M7 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm10 0a3 3 0 1 1 0-6 3 3 0 0 1 0 6ZM3 18c.8-2.3 3-3.5 6-3.5S14.2 15.7 15 18H3Zm9 0c.6-1.8 2.4-3 4.8-3 2.7 0 4.8 1.5 5.2 3H12Z" />

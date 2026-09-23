@@ -18,13 +18,8 @@ export default function Services() {
             </div>
             <h3 className="card-title">Présence & compagnie</h3>
           </div>
-          <p className="card-subtitle script-font">Un moment d’échange, un café partagé ou simplement une présence rassurante</p>
-          <ul className="service-list">
-            <li>Un moment d’échange et de discussion</li>
-            <li>Un café partagé ou une simple présence rassurante</li>
-            <li>Une écoute attentive et un lien humain au quotidien</li>
-          </ul>
-        </div>
+          <p className="card-subtitle script-font">Un moment d’échange et de discussion, un café partagé ou simplement une présence rassurante</p>
+          </div>
 
         {/* Carte 2 */}
         <div className="service-card">
@@ -37,12 +32,7 @@ export default function Services() {
             <h3 className="card-title">Promenades & sorties</h3>
           </div>
           <p className="card-subtitle script-font">Prendre l'air, se promener, aller au marché, à la médiathèque, selon vos envies et possibilités</p>
-          <ul className="service-list">
-            <li>Promenade dans le quartier ou en nature</li>
-            <li>Sorties au marché, à la médiathèque ou en ville</li>
-            <li>Accompagnement selon vos envies et vos capacités</li>
-          </ul>
-        </div>
+         </div>
 
         {/* Carte 3 */}
         <div className="service-card">
@@ -55,12 +45,7 @@ export default function Services() {
             <h3 className="card-title">Lecture, jeux & activités</h3>
           </div>
           <p className="card-subtitle script-font">Lire ensemble, jouer, discuter, stimuler la mémoire ou partager une activité créative ou culturelle</p>
-          <ul className="service-list">
-            <li>Lecture ou relecture de textes</li>
-            <li>Jeux de société, cartes ou conversation</li>
-            <li>Activités créatives ou culturelles à partager</li>
-          </ul>
-        </div>
+          </div>
 
         {/* Carte 4 */}
         <div className="service-card">

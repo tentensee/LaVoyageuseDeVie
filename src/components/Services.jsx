@@ -58,12 +58,7 @@ export default function Services() {
             <h3 className="card-title">Courses & rendez-vous</h3>
           </div>
           <p className="card-subtitle script-font">Un accompagnement pour les courses, les rendez-vous ou les déplacements du quotidien</p>
-          <ul className="service-list">
-            <li>Courses de première nécessité</li>
-            <li>Accompagnement aux rendez-vous</li>
-            <li>Déplacements du quotidien en ville</li>
-          </ul>
-        </div>
+          </div>
 
         {/* Carte 5 */}
         <div className="service-card">
@@ -76,12 +71,7 @@ export default function Services() {
             <h3 className="card-title">Aide aux démarches simples</h3>
           </div>
           <p className="card-subtitle script-font">Un soutien pour certaines démarches administratives courantes</p>
-          <ul className="service-list">
-            <li>Préparation d'enveloppes ou papiers</li>
-            <li>Aide à la lecture de courrier</li>
-            <li>Soutien pour démarches administratives simples</li>
-          </ul>
-        </div>
+          </div>
 
         {/* Carte 6 */}
         <div className="service-card">
@@ -94,12 +84,7 @@ export default function Services() {
             <h3 className="card-title">Accompagnement des proches</h3>
           </div>
           <p className="card-subtitle script-font">Une présence auprès de votre proche pour vous permettre de souffler, de vous absenter ou de prendre un peu de temps pour vous, en toute sérénité</p>
-          <ul className="service-list">
-            <li>Relais ponctuel ou régulier</li>
-            <li>Soutien pour vous absenter sereinement</li>
-            <li>Temps pour vous, en toute confiance</li>
-          </ul>
-        </div>
+         </div>
       </div>
     </section>
   );

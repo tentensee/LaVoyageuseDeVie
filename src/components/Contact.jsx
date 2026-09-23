@@ -42,7 +42,7 @@ export default function Contact() {
   return (
     <section className="contact-section" id="contact">
       <div className="section-header">
-        <h2>Un besoin ? Écrivez-moi</h2>
+        <h2>Une question ? Une demande ? Écrivez-moi</h2>
       </div>
 
       {isSubmitted && (

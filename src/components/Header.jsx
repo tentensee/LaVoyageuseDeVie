@@ -6,7 +6,7 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['accueil', 'services', 'for-who', 'secteur', 'tarifs', 'approche', 'contact'];
+      const sections = ['accueil', 'mes services', 'for-who', 'secteur', 'tarif', 'qui suis-je', 'contact'];
       const triggerPosition = window.innerHeight * 0.35;
 
       let currentSection = 'accueil';

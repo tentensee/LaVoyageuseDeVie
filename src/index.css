@@ -326,6 +326,12 @@ nav a:hover {
     line-height: 1.5;
 }
 
+.card-subtitle.script-font {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
 .service-list {
     list-style: none;
     margin: 0;

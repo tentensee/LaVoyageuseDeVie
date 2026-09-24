@@ -182,7 +182,7 @@ nav a:hover {
     align-items: center;
     position: relative;
     background: linear-gradient(to right, rgba(249, 246, 240, 0.92) 45%, rgba(249, 246, 240, 0.4) 100%), 
-                url(assets/plagesb.jpg) no-repeat center center/cover;
+                url(assets/plagesb.webp) no-repeat center center/cover;
 }
 
 .hero-container {

@@ -1,5 +1,5 @@
 import React from 'react';
-import secteurMap from '../assets/secteur_d_intervention.jpg';
+import secteurMap from '../assets/secteur_d_intervention.webp';
 
 export default function Secteur() {
   return (

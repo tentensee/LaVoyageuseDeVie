@@ -1,4 +1,4 @@
-import photoRozenn from '../assets/photoRozenn.jpg';
+import photoRozenn from '../assets/photoRozenn.webp';
 
 export default function About() {
   return (

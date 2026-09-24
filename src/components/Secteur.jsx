@@ -10,8 +10,8 @@ export default function Secteur() {
       <div className="secteur-container">
         <div className="secteur-info">
           <p className="secteur-description">
-            J’interviens principalement sur Saint Brévin et ses alentours.<br />
-            Pour toute autre demande, n’hésitez pas à me contacter pour que nous puissions échanger.
+            <span>J’interviens principalement sur Saint Brévin et ses alentours.</span>
+            <span>Pour toute autre demande, n’hésitez pas à me contacter pour que nous puissions échanger.</span>
           </p>
         </div>
 

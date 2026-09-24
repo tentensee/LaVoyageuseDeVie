@@ -72,7 +72,7 @@ export default function Services() {
             </div>
             <h3 className="card-title">Accompagnement des proches</h3>
           </div>
-          <p className="card-subtitle script-font">Une présence auprès de votre proche pour vous permettre de souffler, de vous absenter ou de prendre un peu de temps pour vous, en toute sérénité</p>
+          <p className="card-subtitle script-font">Une présence auprès de votre proche pour vous permettre de souffler, de vous absenter et de prendre un peu de temps pour vous, en toute sérénité</p>
         </div>
       </div>
     </section>

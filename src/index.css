@@ -282,7 +282,7 @@ nav a:hover {
     padding: 27px 24px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.03);
     transition: var(--transition-smooth);
-    border: 1px solid rgba(92, 107, 89, 0.08);
+    border: 5px solid white;
     position: relative;
     overflow: hidden;
     min-height: 100%;
@@ -655,6 +655,7 @@ footer {
         padding: 20px;
         box-shadow: 0 4px 10px rgba(0,0,0,0.05);
         gap: 15px;
+        background-color: rgba(255, 255, 255, 0.5);
     }
 
     nav ul.active {
@@ -769,7 +770,7 @@ footer {
     padding: 40px;
     border: 1px solid rgba(92, 107, 89, 0.08);
     border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
     align-items: center;
 }
 

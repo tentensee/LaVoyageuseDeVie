@@ -385,8 +385,12 @@ nav a:hover {
 
 /* Section Approche / À Propos */
 .about-section {
-    background-color: var(--bg-sand-dark);
+    background-color: var(--sage-green);
     padding: 100px 20px;
+}
+
+.about-section .section-header h2 {
+    color: white;
 }
 
 .about-container {
@@ -442,7 +446,7 @@ nav a:hover {
 
 .about-name {
     font-size: 2rem;
-    color: var(--charcoal);
+    color: white;
     margin-top: 15px;
     text-align: center;
 }
@@ -452,7 +456,7 @@ nav a:hover {
     font-size: 1.4rem;
     font-weight: 600;
     letter-spacing: 1px;
-    color: var(--sage-green);
+    color: white;
     text-transform: uppercase;
     margin-bottom: 25px;
     line-height: 1.4;
@@ -461,7 +465,7 @@ nav a:hover {
 .about-text {
     font-size: 1.1rem;
     margin-bottom: 20px;
-    color: var(--text-dark);
+    color: white;
 }
 
 /* Section Contact interactive */
@@ -680,12 +684,12 @@ footer {
 
 /* Section Tarifs */
 .pricing-section {
-    background-color: var(--sage-green);
+    background-color: var(--bg-sand-light);
     padding: 100px 20px;
 }
 
 .pricing-section .section-header h2 {
-    color: white;
+    color: var(--charcoal);
 }
 
 .pricing-container {
@@ -699,14 +703,14 @@ footer {
 }
 
 .tarif-simple-card {
-    color: white;
+    color: var(--text-dark);
     text-align: center;
 }
 
 .tarif-prix {
     font-size: clamp(1.7rem, 2.4vw, 2.4rem);
     font-weight: 700;
-    color: white;
+    color: var(--charcoal);
     margin: 0 0 20px;
     letter-spacing: 0.03em;
 }
@@ -715,7 +719,7 @@ footer {
 .tarif-info {
     font-size: 1.08rem;
     line-height: 1.7;
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--text-dark);
     max-width: 700px;
     margin: 0 auto;
 }
@@ -748,7 +752,11 @@ footer {
 /* --- SECTION SECTEUR --- */
 .map-section {
     padding: 100px 20px;
-    background-color: white;
+    background-color: var(--sage-green);
+}
+
+.map-section .section-header h2 {
+    color: white;
 }
 
 /* Mise en page : texte à gauche, carte à droite */
@@ -773,7 +781,7 @@ footer {
 
 .secteur-description {
     font-size: 1.1rem;
-    color: var(--text-dark);
+    color: white;
     margin: 0;
     line-height: 1.7;
 }

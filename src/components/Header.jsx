@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -51,14 +51,17 @@ export default function Header() {
           <span className="logo-sub script-font">de Vie</span>
         </a>
         
-        <div 
-          className="menu-toggle" 
+        <button
+          type="button"
+          className={`menu-toggle${isMobileMenuOpen ? ' active' : ''}`}
+          aria-label={isMobileMenuOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
+          aria-expanded={isMobileMenuOpen}
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           <span></span>
           <span></span>
           <span></span>
-        </div>
+        </button>
 
         <nav>
           <ul className={isMobileMenuOpen ? 'active' : ''}>

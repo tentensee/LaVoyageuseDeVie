@@ -18,12 +18,6 @@
     --transition-smooth: all 0.3s ease;
 }
 
-.about-text, 
-.secteur-description, 
-.service-list li {
-    text-align: justify;
-}
-
 /* Styles globaux */
 * {
     box-sizing: border-box;
@@ -163,6 +157,10 @@ nav a:hover {
     display: none;
     flex-direction: column;
     gap: 5px;
+    margin-left: auto;
+    padding: 8px 0 8px 8px;
+    border: 0;
+    background: transparent;
     cursor: pointer;
 }
 
@@ -172,6 +170,18 @@ nav a:hover {
     background-color: var(--charcoal);
     border-radius: 3px;
     transition: var(--transition-smooth);
+}
+
+.menu-toggle.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
 }
 
 /* Hero Section */
@@ -664,7 +674,7 @@ footer {
         padding-bottom: 15px;
     }
 
-    .manifesto-text { font-size: 0.5rem; }
+    .manifesto-text { font-size: 1.8rem; }
     .footer-bottom { flex-direction: column; gap: 10px; text-align: center; }
 }
 

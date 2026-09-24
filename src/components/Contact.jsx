@@ -1,12 +1,27 @@
 import React, { useState } from 'react';
 
-const FORM_SUBMIT_EMAIL = 'lavoyageusedevie@gmail.com';
-
 export default function Contact() {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitError, setSubmitError] = useState(false);
+  const [submitError, setSubmitError] = useState('');
   const [formData, setFormData] = useState({ name: '', phone: '', email: '', message: '' });
+
+  const WEBHOOK_ENDPOINT = '/api/contact-form-webhook';
+
+  const normalizeName = (fullName = '') => {
+    const trimmed = fullName.trim();
+    if (!trimmed) return { firstName: '', lastName: '' };
+
+    const parts = trimmed.split(/\s+/);
+    if (parts.length === 1) {
+      return { firstName: parts[0], lastName: '' };
+    }
+
+    return {
+      firstName: parts[0],
+      lastName: parts.slice(1).join(' '),
+    };
+  };
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.id]: e.target.value });
@@ -14,26 +29,95 @@ export default function Contact() {
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
+
+    if (isSubmitting) return;
+
+    const email = formData.email.trim();
+    const message = formData.message.trim();
+
+    if (!email || !message) {
+      setSubmitError('Merci de remplir au minimum votre email et votre message.');
+      setIsSubmitted(false);
+      return;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      setSubmitError('L’adresse email semble invalide.');
+      setIsSubmitted(false);
+      return;
+    }
+
     setIsSubmitting(true);
-    setSubmitError(false);
+    setSubmitError('');
+    setIsSubmitted(false);
+
+    const { firstName, lastName } = normalizeName(formData.name);
+
+    const supabasePayload = {
+      email,
+      message,
+      firstName,
+      lastName,
+      phone: formData.phone.trim(),
+      source: 'website',
+      subject: 'Nouveau message depuis le site La Voyageuse de Vie',
+    };
+    const FORMSUBMIT_EMAIL = 'lavoyageusedevie@gmail.com'; 
+
+    const formSubmitPayload = {
+      name: formData.name.trim(),
+      email,
+      phone: formData.phone.trim(),
+      message,
+      _subject: 'Nouveau message depuis le site La Voyageuse de Vie',
+      _template: 'basic', 
+    };
 
     try {
-      const response = await fetch(`https://formsubmit.co/ajax/${FORM_SUBMIT_EMAIL}`, {
-        method: 'POST',
-        headers: { Accept: 'application/json' },
-        body: new FormData(e.currentTarget),
-      });
+      const [supabaseRes, formSubmitRes] = await Promise.all([
+        fetch(WEBHOOK_ENDPOINT, {
+          method: 'POST',
+          headers: {
+            Accept: 'application/json',
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(supabasePayload),
+        }),
 
-      if (!response.ok) throw new Error('Formsubmit request failed');
+        fetch(`https://formsubmit.co/ajax/${FORMSUBMIT_EMAIL}`, {
+          method: 'POST',
+          headers: {
+            Accept: 'application/json',
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formSubmitPayload),
+        }),
+      ]);
+
+      let supabaseData = null;
+      try {
+        supabaseData = await supabaseRes.json();
+      } catch {
+        supabaseData = null;
+      }
+
+      if (!supabaseRes.ok || !supabaseData?.ok) {
+        throw new Error(supabaseData?.error || `Erreur Supabase HTTP ${supabaseRes.status}`);
+      }
 
       setIsSubmitted(true);
+      setSubmitError('');
       setFormData({ name: '', phone: '', email: '', message: '' });
+      setTimeout(() => setIsSubmitted(false), 6000);
 
-      setTimeout(() => {
-        setIsSubmitted(false);
-      }, 6000);
-    } catch {
-      setSubmitError(true);
+    } catch (error) {
+      setSubmitError(
+        error instanceof Error && error.message
+          ? `L’envoi a échoué : ${error.message}`
+          : 'L’envoi a échoué. Merci de réessayer dans quelques instants.'
+      );
+      setIsSubmitted(false);
     } finally {
       setIsSubmitting(false);
     }
@@ -53,19 +137,13 @@ export default function Contact() {
 
       {submitError && (
         <div className="success-toast" style={{ display: 'block' }}>
-          L’envoi a échoué. Merci de réessayer dans quelques instants.
+          {submitError}
         </div>
       )}
 
       <div className="contact-grid">
-        <form
-          action={`https://formsubmit.co/${FORM_SUBMIT_EMAIL}`}
-          method="POST"
-          onSubmit={handleFormSubmit}
-        >
-          <input type="hidden" name="_captcha" value="false" />
+        <form onSubmit={handleFormSubmit}>
           <input type="hidden" name="_subject" value="Nouveau message depuis le site La Voyageuse de Vie" />
-          <input type="hidden" name="_template" value="basic" />
 
           <div className="form-group">
             <label htmlFor="name">Votre nom / prénom</label>

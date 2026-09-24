@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.lavoyageusedevie.fr/sitemap.xml
+Sitemap: https://lavoyageusedevie.com/sitemap.xml

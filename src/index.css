@@ -412,7 +412,7 @@ nav a:hover {
     height: 200px;
     border-radius: 50%;
     background-color: var(--sage-green-light);
-    border: 8px solid black;
+    border: 1px solid rgba(35, 43, 43, 0.12);
     box-shadow: 0 10px 25px rgba(0,0,0,0.08);
     margin: 0 auto;
     display: flex;

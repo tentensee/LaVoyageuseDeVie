@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 export default function Contact() {
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -104,6 +104,10 @@ export default function Contact() {
 
       if (!supabaseRes.ok || !supabaseData?.ok) {
         throw new Error(supabaseData?.error || `Erreur Supabase HTTP ${supabaseRes.status}`);
+      }
+
+      if (!formSubmitRes.ok) {
+        throw new Error(`Erreur FormSubmit HTTP ${formSubmitRes.status}`);
       }
 
       setIsSubmitted(true);

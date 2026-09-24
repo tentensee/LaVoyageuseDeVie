@@ -1,4 +1,3 @@
-import React from 'react';
 import { Users, Sun, MailOpen, HandHeart, Dices, ShoppingBasket } from 'lucide-react';
 
 export default function Services() {

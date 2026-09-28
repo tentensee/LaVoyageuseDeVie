@@ -6,23 +6,6 @@ export default function Contact() {
   const [submitError, setSubmitError] = useState('');
   const [formData, setFormData] = useState({ name: '', phone: '', email: '', message: '' });
 
-  const WEBHOOK_ENDPOINT = '/api/contact-form-webhook';
-
-  const normalizeName = (fullName = '') => {
-    const trimmed = fullName.trim();
-    if (!trimmed) return { firstName: '', lastName: '' };
-
-    const parts = trimmed.split(/\s+/);
-    if (parts.length === 1) {
-      return { firstName: parts[0], lastName: '' };
-    }
-
-    return {
-      firstName: parts[0],
-      lastName: parts.slice(1).join(' '),
-    };
-  };
-
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.id]: e.target.value });
   };
@@ -52,17 +35,6 @@ export default function Contact() {
     setSubmitError('');
     setIsSubmitted(false);
 
-    const { firstName, lastName } = normalizeName(formData.name);
-
-    const supabasePayload = {
-      email,
-      message,
-      firstName,
-      lastName,
-      phone: formData.phone.trim(),
-      source: 'website',
-      subject: 'Nouveau message depuis le site La Voyageuse de Vie',
-    };
     const FORMSUBMIT_EMAIL = 'lavoyageusedevie@gmail.com'; 
 
     const formSubmitPayload = {
@@ -75,36 +47,14 @@ export default function Contact() {
     };
 
     try {
-      const [supabaseRes, formSubmitRes] = await Promise.all([
-        fetch(WEBHOOK_ENDPOINT, {
-          method: 'POST',
-          headers: {
-            Accept: 'application/json',
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(supabasePayload),
-        }),
-
-        fetch(`https://formsubmit.co/ajax/${FORMSUBMIT_EMAIL}`, {
-          method: 'POST',
-          headers: {
-            Accept: 'application/json',
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(formSubmitPayload),
-        }),
-      ]);
-
-      let supabaseData = null;
-      try {
-        supabaseData = await supabaseRes.json();
-      } catch {
-        supabaseData = null;
-      }
-
-      if (!supabaseRes.ok || !supabaseData?.ok) {
-        throw new Error(supabaseData?.error || `Erreur Supabase HTTP ${supabaseRes.status}`);
-      }
+      const formSubmitRes = await fetch(`https://formsubmit.co/ajax/${FORMSUBMIT_EMAIL}`, {
+        method: 'POST',
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formSubmitPayload),
+      });
 
       if (!formSubmitRes.ok) {
         throw new Error(`Erreur FormSubmit HTTP ${formSubmitRes.status}`);

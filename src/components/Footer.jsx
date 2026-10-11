@@ -21,6 +21,9 @@ export default function Footer() {
 
       <div className="footer-bottom">
         <p>&copy; 2026 La Voyageuse de Vie - Tous droits réservés.</p>
+        <nav className="legal-links" aria-label="Informations légales">
+          <a href="/mentions-legales">Mentions légales et confidentialité</a>
+        </nav>
       </div>
     </footer>
   );

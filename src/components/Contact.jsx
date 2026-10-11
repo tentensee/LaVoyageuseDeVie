@@ -113,8 +113,13 @@ export default function Contact() {
           </div>
           <div className="form-group">
             <label htmlFor="message">Votre message ou situation</label>
-            <textarea id="message" name="message" className="form-control" placeholder="Décrivez brièvement vos besoins..." value={formData.message} onChange={handleChange} required></textarea>
+            <textarea id="message" name="message" className="form-control" placeholder="Décrivez brièvement votre demande, sans informations de santé ou données sensibles..." value={formData.message} onChange={handleChange} required></textarea>
           </div>
+          <p className="contact-privacy-note">
+            Les informations envoyées servent uniquement à répondre à votre demande. Consultez la{' '}
+            <a href="/mentions-legales#confidentialite">politique de confidentialité</a>. Merci de ne pas transmettre
+            d’informations médicales ou sensibles dans ce formulaire.
+          </p>
           <button type="submit" className="btn-submit" disabled={isSubmitting}>
             {isSubmitting ? 'Envoi en cours...' : 'Envoyer la demande'}
           </button>
